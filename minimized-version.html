@@ -5,87 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD. Mazharul Islam - Senior Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .resume-container {
-            max-width: 8.5in;
-            margin: 0 auto;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .resume-container { max-width: 8.5in; margin: 0 auto; }
     </style>
 </head>
-
 <body>
-<div class="resume-container bg-white">
-    <!-- Header Section -->
-    <div class="bg-white pb-4 ps-4 pe-4 border-b border-gray-300">
-        <div class="flex items-start gap-6">
-            <div class="flex-shrink-0">
-                <div class="w-32 h-40 bg-gray-300 rounded-lg overflow-hidden">
-                    <div
-                            class="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center text-white text-xs">
-                        <img src="./mi-shajib.jpg" alt="Profile Picture" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-            <div class="flex-1">
-                <h1 class="text-4xl font-bold text-gray-900 mb-2">Md. Mazharul Islam</h1>
-                <h2 class="text-xl font-medium text-gray-600 mb-4">Senior Software Engineer</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700">
-                    <div class="flex items-center gap-2">
-                        <span class="font-medium">📞</span>
-                        <a href="tel:+8801792225556"
-                           class="text-gray-600 hover:text-blue-800 hover:underline">+8801792225556</a>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-envelope text-red-500 font-medium"></i>
-                        <a href="mailto:mishajib222@gmail.com"
-                           class="text-gray-600 hover:text-blue-800 hover:underline cursor-pointer">mishajib222@gmail.com</a>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fab fa-linkedin text-blue-600 font-medium"></i>
-                        <a href="https://www.linkedin.com/in/mishajib/" target="_blank" rel="noopener noreferrer"
-                           class="text-gray-600 hover:text-blue-800 hover:underline">www.linkedin.com/in/mishajib/</a>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fab fa-github text-gray-800 font-medium"></i>
-                        <a href="https://www.github.com/mishajib" target="_blank" rel="noopener noreferrer"
-                           class="text-gray-800 hover:text-blue-800 hover:underline">www.github.com/mishajib</a>
-                    </div>
-                    <div class="flex items-center gap-2 col-span-2">
-                        <svg class="font-medium -ms-1" width="20" height="20" viewBox="0 0 24 32" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                    d="M12 0C5.373 0 0 5.373 0 12C0 18.627 12 32 12 32C12 32 24 18.627 24 12C24 5.373 18.627 0 12 0Z"
-                                    fill="#FF4444"/>
-                            <circle cx="12" cy="12" r="4" fill="white"/>
-                        </svg>
-                        <span>Dhaka, Bangladesh | Open to Remote Work</span>
-                    </div>
-                </div>
-            </div>
+<div class="resume-container bg-white pb-4 ps-4 pe-4">
+    <!-- Header -->
+    <div class="border-b border-gray-300 pb-4 mb-6">
+        <h1 class="text-3xl font-bold text-gray-900">MD. Mazharul Islam</h1>
+        <h2 class="text-lg font-medium text-gray-700">Senior Software Engineer</h2>
+        <div class="mt-2 text-sm text-gray-700 space-y-1">
+            <p><strong>Phone:</strong> +8801792225556 | <strong>Email:</strong> mishajib222@gmail.com</p>
+            <p><strong>LinkedIn:</strong> www.linkedin.com/in/mishajib | <strong>GitHub:</strong> www.github.com/mishajib</p>
+            <p><strong>Location:</strong> Dhaka, Bangladesh | Open to Remote</p>
         </div>
     </div>
 
     <!-- About -->
-    <div class="mb-3 mt-3">
+    <div class="mb-6">
         <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">About Me</h3>
         <p class="text-sm text-gray-700 leading-relaxed">
-            Senior Software Engineer with 5+ years of expertise in full-stack development, microservices, and Agile
-            delivery. Skilled in PHP, Laravel, Node.js, Vue.js, React.js, MySQL, and MongoDB. Experienced in CI/CD
-            pipelines, Docker, AWS, and TDD. Passionate about mentoring teams and delivering scalable solutions that
-            drive business growth.
+            Senior Software Engineer with 5+ years of expertise in full-stack development, microservices, and Agile delivery. Skilled in PHP, Laravel, Node.js, Vue.js, React.js, MySQL, and MongoDB. Experienced in CI/CD pipelines, Docker, AWS, and TDD. Passionate about mentoring teams and delivering scalable solutions that drive business growth.
         </p>
     </div>
 
     <!-- Experience -->
-    <div class="mb-3">
+    <div class="mb-6">
         <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Experience</h3>
 
         <!-- Doctime -->
@@ -96,9 +44,7 @@
             </div>
             <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
                 <li>Built microservices-based prescription system with Laravel, MySQL, and Vue.js.</li>
-                <li>Migrated 250K+ records to Branch.io (Firebase Dynamic Links replacement) using Laravel commands with
-                    zero data loss.
-                </li>
+                <li>Migrated 250K+ records to Branch.io (Firebase Dynamic Links replacement) using Laravel commands with zero data loss.</li>
                 <li>Designed databases and introduced services for multi-diagnostic center analytics.</li>
                 <li>Mentored junior developers, applied TDD, and conducted code reviews.</li>
                 <li>Implemented Redis pub/sub for real-time communication.</li>
@@ -170,19 +116,18 @@
     </div>
 
     <!-- Skills -->
-    <div class="mb-3">
+    <div class="mb-6">
         <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Technical Skills</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 text-sm text-gray-700 gap-2">
             <div>
                 <p><strong>Backend:</strong> PHP, Laravel, Node.js, Express.js, Java, Spring Boot, Python, Django</p>
                 <p><strong>Frontend:</strong> Vue.js, React.js, JavaScript, TypeScript, Nuxt.js, Next.js, Inertia.js</p>
-                <p><strong>State Mgmt:</strong> Pinia, VueX</p>
-                <p><strong>UI:</strong> Livewire, Filament</p>
+                <p><strong>State Management:</strong> Pinia, VueX</p>
+                <p><strong>UI Frameworks:</strong> Livewire, Filament</p>
             </div>
             <div>
                 <p><strong>Databases:</strong> MySQL, SQLite, MongoDB, CouchDB</p>
-                <p><strong>Cloud/DevOps:</strong> AWS (EC2, S3, Cognito), DigitalOcean, Docker, Linux, GitHub Actions
-                </p>
+                <p><strong>Cloud/DevOps:</strong> AWS (EC2, S3, Cognito), DigitalOcean, Docker, Linux, GitHub Actions</p>
                 <p><strong>Tools:</strong> Git (GitHub, Bitbucket, GitLab), Jira, Trello, ClickUp, Linear, Notion</p>
             </div>
         </div>
@@ -192,7 +137,7 @@
     <div>
         <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Education</h3>
         <div class="space-y-2 text-sm text-gray-700">
-            <p><strong>MSc in Computer Science and Engineering</strong>, Uttara University – 2022-2022</p>
+            <p><strong>MSc in Computer Science and Engineering</strong>, Uttara University – 2022</p>
             <p><strong>BSc in Computer Science and Engineering</strong>, Uttara University – 2016–2020</p>
         </div>
     </div>
