@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD. Mazharul Islam - Senior Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
         body {
             font-family: 'Inter', sans-serif;
+            background: #ffffff;
+        }
+
+        /* PRINT FIX */
+        @media print {
+
+            html,
+            body {
+                background: #ffffff !important;
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .resume-container {
+                background: #ffffff !important;
+                max-width: 100%;
+                padding: 20px;
+                box-shadow: none !important;
+            }
+        }
+
+        @page {
+            margin: 20mm;
         }
 
         .resume-container {
@@ -22,180 +46,148 @@
 </head>
 
 <body>
-<div class="resume-container bg-white">
-    <!-- Header Section -->
-    <div class="bg-white pb-4 ps-4 pe-4 border-b border-gray-300">
-        <div class="flex items-start gap-6">
-            <div class="flex-shrink-0">
-                <div class="w-32 h-40 bg-gray-300 rounded-lg overflow-hidden">
-                    <div
-                            class="w-full h-full bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center text-white text-xs">
-                        <img src="./mi-shajib.jpg" alt="Profile Picture" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-            <div class="flex-1">
-                <h1 class="text-4xl font-bold text-gray-900 mb-2">Md. Mazharul Islam</h1>
-                <h2 class="text-xl font-medium text-gray-600 mb-4">Senior Software Engineer</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700">
-                    <div class="flex items-center gap-2">
-                        <span class="font-medium">📞</span>
-                        <a href="tel:+8801792225556"
-                           class="text-gray-600 hover:text-blue-800 hover:underline">+8801792225556</a>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-envelope text-red-500 font-medium"></i>
-                        <a href="mailto:mishajib222@gmail.com"
-                           class="text-gray-600 hover:text-blue-800 hover:underline cursor-pointer">mishajib222@gmail.com</a>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fab fa-linkedin text-blue-600 font-medium"></i>
-                        <a href="https://www.linkedin.com/in/mishajib/" target="_blank" rel="noopener noreferrer"
-                           class="text-gray-600 hover:text-blue-800 hover:underline">www.linkedin.com/in/mishajib/</a>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fab fa-github text-gray-800 font-medium"></i>
-                        <a href="https://www.github.com/mishajib" target="_blank" rel="noopener noreferrer"
-                           class="text-gray-800 hover:text-blue-800 hover:underline">www.github.com/mishajib</a>
-                    </div>
-                    <div class="flex items-center gap-2 col-span-2">
-                        <svg class="font-medium -ms-1" width="20" height="20" viewBox="0 0 24 32" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                    d="M12 0C5.373 0 0 5.373 0 12C0 18.627 12 32 12 32C12 32 24 18.627 24 12C24 5.373 18.627 0 12 0Z"
-                                    fill="#FF4444"/>
-                            <circle cx="12" cy="12" r="4" fill="white"/>
-                        </svg>
-                        <span>Dhaka, Bangladesh | Open to Remote Work</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="resume-container bg-white p-6">
 
-    <!-- About -->
-    <div class="mb-3 mt-3">
-        <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">About Me</h3>
-        <p class="text-sm text-gray-700 leading-relaxed">
-            Senior Software Engineer with 5+ years of expertise in full-stack development, microservices, and Agile
-            delivery. Skilled in PHP, Laravel, Node.js, Vue.js, React.js, MySQL, and MongoDB. Experienced in CI/CD
-            pipelines, Docker, AWS, and TDD. Passionate about mentoring teams and delivering scalable solutions that
-            drive business growth.
-        </p>
-    </div>
+        <!-- HEADER -->
+        <div class="border-b border-gray-300 pb-4 mb-5">
+            <h1 class="text-3xl font-bold text-gray-900">MD. Mazharul Islam</h1>
+            <h2 class="text-md font-medium text-gray-700">
+                Senior Software Engineer | PHP (Laravel) | JavaScript (Vue, React)
+            </h2>
 
-    <!-- Experience -->
-    <div class="mb-3">
-        <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Experience</h3>
-
-        <!-- Doctime -->
-        <div class="mb-4">
-            <div class="flex justify-between text-sm font-medium">
-                <span>Senior Software Engineer – Doctime Limited</span>
-                <span>Mar 2025 – Present</span>
-            </div>
-            <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
-                <li>Built microservices-based prescription system with Laravel, MySQL, and Vue.js.</li>
-                <li>Migrated 250K+ records to Branch.io (Firebase Dynamic Links replacement) using Laravel commands with
-                    zero data loss.
-                </li>
-                <li>Designed databases and introduced services for multi-diagnostic center analytics.</li>
-                <li>Mentored junior developers, applied TDD, and conducted code reviews.</li>
-                <li>Implemented Redis pub/sub for real-time communication.</li>
-            </ul>
-        </div>
-
-        <!-- FusionSoft -->
-        <div class="mb-4">
-            <div class="flex justify-between text-sm font-medium">
-                <span>Senior Software Engineer – FusionSoft (Remote, AU)</span>
-                <span>Sep 2023 – Feb 2025</span>
-            </div>
-            <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
-                <li>Developed AI-driven SaaS solutions with Laravel, MySQL, React.js, Vue.js, AWS S3.</li>
-                <li>Led full project lifecycle with TDD and Agile ceremonies.</li>
-                <li>Built caravan-park booking system with reservations, payments, and streamlined ops.</li>
-            </ul>
-        </div>
-
-        <!-- Enkaizen -->
-        <div class="mb-4">
-            <div class="flex justify-between text-sm font-medium">
-                <span>Software Engineer – Enkaizen</span>
-                <span>Sep 2022 – Apr 2023</span>
-            </div>
-            <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
-                <li>Developed platform matching clients to local utility providers using Laravel, MySQL, Vue.js.</li>
-                <li>Built dynamic UI for real-time responses and optimized query performance.</li>
-            </ul>
-        </div>
-
-        <!-- Mediusware -->
-        <div class="mb-4">
-            <div class="flex justify-between text-sm font-medium">
-                <span>Software Engineer – Mediusware Ltd.</span>
-                <span>Oct 2021 – Aug 2022</span>
-            </div>
-            <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
-                <li>Optimized large PHP app with indexing, pagination, and query improvements.</li>
-                <li>Enhanced search, filtering, and infinite scroll with Laravel, Vue.js, React.js.</li>
-                <li>Maintained deployments on AWS EC2, DigitalOcean, and implemented CI/CD pipelines.</li>
-            </ul>
-        </div>
-
-        <!-- IT CLAN BD -->
-        <div class="mb-4">
-            <div class="flex justify-between text-sm font-medium">
-                <span>Web Application Developer – IT CLAN BD</span>
-                <span>Oct 2020 – Nov 2021</span>
-            </div>
-            <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
-                <li>Developed LMS with Laravel & Vue.js, including quizzes, assignments, and payment integration.</li>
-                <li>Built POS system and real-time e-commerce solutions with WebSockets and APIs.</li>
-                <li>Delivered restaurant delivery platform with live tracking and map-based search.</li>
-            </ul>
-        </div>
-
-        <!-- W3ZONES -->
-        <div class="mb-4">
-            <div class="flex justify-between text-sm font-medium">
-                <span>PHP & Laravel Developer – W3ZONES</span>
-                <span>Apr 2019 – Sep 2020</span>
-            </div>
-            <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
-                <li>Built business, inventory, and HR systems with Laravel, MySQL, Bootstrap.</li>
-                <li>Improved SEO, query optimization, and caching for faster performance.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="mb-3">
-        <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Technical Skills</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 text-sm text-gray-700 gap-2">
-            <div>
-                <p><strong>Backend:</strong> PHP, Laravel, Node.js, Express.js, Java, Spring Boot, Python, Django</p>
-                <p><strong>Frontend:</strong> Vue.js, React.js, JavaScript, TypeScript, Nuxt.js, Next.js, Inertia.js</p>
-                <p><strong>State Mgmt:</strong> Pinia, VueX</p>
-                <p><strong>UI:</strong> Livewire, Filament</p>
-            </div>
-            <div>
-                <p><strong>Databases:</strong> MySQL, SQLite, MongoDB, CouchDB</p>
-                <p><strong>Cloud/DevOps:</strong> AWS (EC2, S3, Cognito), DigitalOcean, Docker, Linux, GitHub Actions
+            <div class="mt-2 text-sm text-gray-700 space-y-1">
+                <p><strong>Phone:</strong> +8801792225556 | <strong>Email:</strong> mishajib222@gmail.com</p>
+                <p><strong>LinkedIn:</strong> linkedin.com/in/mishajib | <strong>GitHub:</strong> github.com/mishajib
                 </p>
-                <p><strong>Tools:</strong> Git (GitHub, Bitbucket, GitLab), Jira, Trello, ClickUp, Linear, Notion</p>
+                <p><strong>Location:</strong> Dhaka, Bangladesh | Open to On-site, Hybrid & Remote Opportunities</p>
             </div>
         </div>
-    </div>
 
-    <!-- Education -->
-    <div>
-        <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Education</h3>
-        <div class="space-y-2 text-sm text-gray-700">
-            <p><strong>MSc in Computer Science and Engineering</strong>, Uttara University – 2022-2022</p>
-            <p><strong>BSc in Computer Science and Engineering</strong>, Uttara University – 2016–2020</p>
+        <!-- SUMMARY -->
+        <div class="mb-5">
+            <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Summary</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">
+                Senior Software Engineer with 5+ years of experience building scalable web applications, SaaS platforms,
+                and microservices.
+                Focused on building clean, maintainable, and high-performance systems.
+                Strong expertise in <strong>PHP (Laravel) and JavaScript (Vue.js, React.js)</strong> with hands-on
+                experience working on systems with
+                <strong>50K+ users/day</strong> and <strong>high concurrent requests during peak usage</strong>.
+                Skilled in system design, multi-tenant architecture, API development, and performance optimization.
+                Experienced with AWS, Docker, CI/CD pipelines, and Redis-based real-time systems.
+            </p>
         </div>
+
+        <!-- KEY ACHIEVEMENTS -->
+        <div class="mb-5">
+            <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Key Achievements</h3>
+            <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+                <li>Designed systems serving 50,000+ users per day</li>
+                <li>Migrated 250K+ production records with zero data loss</li>
+                <li>Improved performance significantly via query optimization and caching</li>
+                <li>Implemented real-time systems using WebSockets and Redis Pub/Sub</li>
+            </ul>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="mb-5">
+            <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Experience</h3>
+
+            <div class="mb-3">
+                <div class="flex justify-between text-sm font-semibold">
+                    <span>Senior Software Engineer – Doctime Limited</span>
+                    <span>Mar 2025 – Present</span>
+                </div>
+                <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
+                    <li>Managed microservices-based prescription system improving scalability and maintainability</li>
+                    <li>Migrated 250K+ records with zero downtime and zero data loss</li>
+                    <li>Built analytics services for multi-diagnostic centers</li>
+                    <li>Implemented Redis Pub/Sub for real-time communication</li>
+                    <li>Applied TDD, conducted code reviews, and mentored developers</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <div class="flex justify-between text-sm font-semibold">
+                    <span>Software Engineer – FusionSoft (Remote)</span>
+                    <span>Sep 2023 – Feb 2025</span>
+                </div>
+                <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
+                    <li>Developed SaaS platform for regulatory compliance using Laravel, React.js, and MySQL</li>
+                    <li>Built scalable backend services and APIs for handling business workflows</li>
+                    <li>Developed booking system with reservation and payment functionalities</li>
+                    <li>Worked on full development lifecycle including architecture, development, and deployment</li>
+                    <li>Implemented CI/CD pipelines using GitHub Actions</li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <div class="flex justify-between text-sm font-semibold">
+                    <span>Software Engineer – Enkaizen</span>
+                    <span>Sep 2022 – Apr 2023</span>
+                </div>
+                <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
+                    <li>Developed service platform using Laravel and Vue.js</li>
+                    <li>Optimized performance using indexing and query tuning</li>
+                    <li>Designed and developed REST APIs for seamless frontend-backend integration</li>
+                    <li>Improved application performance by reducing redundant queries and enhancing data fetching logic
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="flex justify-between text-sm font-semibold">
+                    <span>Software Engineer – Mediusware Ltd.</span>
+                    <span>Oct 2021 – Aug 2022</span>
+                </div>
+                <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
+                    <li>Resolved N+1 issues and improved database performance</li>
+                    <li>Enhanced search and filtering systems</li>
+                    <li>Maintained AWS deployments and CI/CD pipelines using GitHub Actions</li>
+                </ul>
+            </div>
+
+            <div class="mt-3">
+                <div class="flex justify-between text-sm font-semibold">
+                    <span>Web Application Developer – IT CLAN BD</span>
+                    <span>Oct 2020 – Nov 2021</span>
+                </div>
+                <ul class="list-disc list-inside text-sm text-gray-700 mt-1 space-y-1">
+                    <li>Developed LMS and eCommerce platforms using Laravel and Vue.js</li>
+                    <li>Built real-time bidding system using WebSockets ensuring accurate transactions</li>
+                    <li>Developed delivery system with live tracking and map-based search</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- SKILLS -->
+        <div class="mb-5">
+            <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Technical Skills</h3>
+
+            <div class="text-sm text-gray-700 space-y-1">
+                <p><strong>Backend:</strong> PHP (Laravel)</p>
+                <p><strong>Frontend:</strong> JavaScript, Vue.js, React.js, TypeScript</p>
+                <p><strong>Architecture:</strong> Microservices, REST APIs, Multi-tenant systems</p>
+                <p><strong>Database:</strong> MySQL, MongoDB</p>
+                <p><strong>Cache & Messaging:</strong> Redis, Pub/Sub, Queues</p>
+                <p><strong>DevOps:</strong> AWS (EC2, S3, Cognito), Docker, CI/CD (GitHub Actions)</p>
+            </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div>
+            <h3 class="text-lg font-bold text-gray-900 border-b border-gray-300 pb-1 mb-2">Education</h3>
+
+            <p class="text-sm text-gray-700">
+                <strong>MSc in Computer Science and Engineering</strong> – Uttara University (2022)
+            </p>
+            <p class="text-sm text-gray-700">
+                <strong>BSc in Computer Science and Engineering</strong> – Uttara University (2020)
+            </p>
+        </div>
+
     </div>
-</div>
 </body>
+
 </html>
